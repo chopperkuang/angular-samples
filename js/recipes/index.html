@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Angaulr Basic</title>
+
+    <script src="../../components/angular/angular.js"></script>
+    <script src="Controller.js"></script>
+
+</head>
+<body>
+<div ng-app="recipeApp">
+    <div ng-controller="RecipeController">
+        菜单总量：{{recipes.length}}</br></br>
+        <input type="button" value="添加菜单" ng-click="addRecipe(recipes.length);"/>
+        <ul id="recipes-ul" >
+            <li ng-repeat="recipe in recipes">{{recipe.title}}</li>
+        </ul>
+
+        <swip ng-model="recipes"></swip>
+
+    </div>
+
+</div>
+</body>
+</html>

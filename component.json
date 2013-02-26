@@ -1,0 +1,11 @@
+{
+    "name":"Customer",
+    "version":"0.1",
+    "dependencies":{
+        "angular":"latest",
+        "angular-resource":"latest",
+        "underscore":"latest",
+        "moment":"latest",
+        "angular-underscore":"https://github.com/floydsoft/angular-underscore.git"
+    }
+}
