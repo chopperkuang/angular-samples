@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>AngularJS sample login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
+    <script src="../../components/angular/angular.js"></script>
+    <script src="Controller.js"></script>
+    <script src="Person.js"></script>
+</head>
+<body>
+<div ng-controller="LoginController">
+    <form name="loginForm">
+        <span>用户名：</span>
+        <input type="text" name="username" ng-model="person.username" required><br>
+        <span>密码：</span>
+        <input type="password" name="password" ng-model="person.password"><br>
+        <button class="btn-small" ng-click="login()" ng-disabled="loginForm.$invalid">提交</button>
+        {{status}}
+    </form>
+</div>
+
+</body>
+</html>
