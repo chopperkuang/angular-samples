@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Angaulr Basic</title>
+
+    <script src="../../components/angular/angular.js"></script>
+    <script src="../../components/angular-mocks/angular-mocks.js" type="text/javascript"></script>
+    <script src="content-mocks.js"></script>
+    <script src="Controller.js"></script>
+
+</head>
+<body>
+<div ng-app="app">
+    <div ng-controller="Controller">
+
+        <input type="button" value="getPhotos" ng-click="getPhotos();"/>
+
+        <input type="text" ng-model="name"/>
+        <input type="button" value="addPhoto" ng-click="addPhoto()"/>
+
+        <br>
+        photos:
+        <p ng-repeat="p in photos">photo name: {{p}}</p>
+    </div>
+
+</div>
+</body>
+</html>
