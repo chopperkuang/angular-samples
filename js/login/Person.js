@@ -9,9 +9,14 @@ app.factory('Person', function($rootScope) {
         username: undefined
     };
 
-    $rootScope.$watch(function() { return person; }, function() {
-        window.localStorage[LOCAL_STORAGE_ID] = JSON.stringify(person);
-    }, true);
+    $rootScope.$watch(
+        function() {
+            return person;
+        },
+        function() {
+            window.localStorage[LOCAL_STORAGE_ID] = JSON.stringify(person);
+        },
+        true);
 
     return person;
 });

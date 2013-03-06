@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Angaulr Basic</title>
+
+    <script src="../../components/angular/angular.js"></script>
+    <script src="Controller.js"></script>
+    <script src="Base64.js"></script>
+    <script src="Md5.js"></script>
+
+</head>
+<body>
+<div ng-app="app">
+    <div ng-controller="Controller">
+
+        <input type="button" value="build access token" ng-click="buildAccessToken();"/>
+
+        <input type="button" value="getPhotos" ng-click="getPhotos();"/>
+        <input type="button" value="refershToken" ng-click="refershToken();"/>
+        <br>
+        access_token:{{accessToken}}<br>
+        photos:{{photos}}
+    </div>
+
+</div>
+</body>
+</html>
