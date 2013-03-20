@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Angaulr Basic</title>
+
+    <script src="../../components/angular/angular.js"></script>
+    <script src="Controller.js"></script>
+
+</head>
+<body>
+<div ng-app="app">
+    <div ng-controller="Ctrl">
+        1<input type="radio" value="1" name="mark" ng-model="filter.mark" value="1">
+        2<input type="radio" value="2" name="mark" ng-model="filter.mark" value="2">
+        3<input type="radio" value="3" name="mark" ng-model="filter.mark" value="3">
+        4<input type="radio" value="4" name="mark" ng-model="filter.mark" value="4">
+        <p>mark: {{filter.mark}}</p>
+
+        <div id="seeDiv" ng-show="show">
+            v1<input type="radio" name="v" ng-model="v" value="1">
+            <span ng-show="seeRadioV">v2<input type="radio" name="v" ng-model="v" value="2" ></span>
+        </div>
+
+        <mark ng-model="filter"></mark>
+    </div>
+</div>
+</body>
+</html>
